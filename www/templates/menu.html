@@ -1,35 +1,40 @@
 <ion-side-menus enable-menu-with-back-views="false">
   <ion-side-menu-content>
-    <ion-nav-bar class="bar-stable">
+    <ion-nav-bar class="background-2">
       <ion-nav-back-button>
       </ion-nav-back-button>
 
       <ion-nav-buttons side="left">
-        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        <button class="button button-icon button-clear ion-navicon butonbg" menu-toggle="left">
         </button>
       </ion-nav-buttons>
     </ion-nav-bar>
     <ion-nav-view name="menuContent"></ion-nav-view>
   </ion-side-menu-content>
 
-  <ion-side-menu side="left">
-    <ion-header-bar class="bar-stable">
-      <h1 class="title">Left</h1>
+  <ion-side-menu side="left" style="background: #3e4b58">
+    <ion-header-bar class=" bar-stable " style="background: #3e4b58">
+
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item menu-close ng-click="login()">
+        <ion-item menu-close href="#/app/anasayfa">
+          <ion-icon name="home"></ion-icon> Anasayfa
+        </ion-item>
+        <ion-item menu-close href="#/app/oyun">
+          <ion-icon name="logo-game-controller-a"></ion-icon> Oyun
+        </ion-item>
+        <ion-item menu-close href="#/app/kurallar">
+          <ion-icon name="help-circle"></ion-icon> Kurallar
+        </ion-item>
+        <!--
+          <ion-item menu-close ng-click="login()">
           Login
         </ion-item>
-        <ion-item menu-close href="#/app/search">
-          Search
-        </ion-item>
-        <ion-item menu-close href="#/app/browse">
-          Browse
-        </ion-item>
-        <ion-item menu-close href="#/app/playlists">
-          Playlists
-        </ion-item>
+        -->
+
+
+
       </ion-list>
     </ion-content>
   </ion-side-menu>

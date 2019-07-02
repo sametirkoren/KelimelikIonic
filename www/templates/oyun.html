@@ -1,0 +1,55 @@
+<ion-view view-title="Kelimelik">
+  <ion-content id="opacity" style="overflow: hidden; " class="background">
+
+    <div style="display: flex;">
+      <div id="skorAnimasyon" style="margin-top: 40px;  " class="skor skor-1 animated heartBeat">
+        <span>Skor</span>
+        <span id="dogruCevap" style="margin-top: 10%;">{{ skor }}</span>
+      </div>
+      <div id="skorAnimasyon" style="margin-top: 40px; margin-left: auto; " class="skor hak-1 animated heartBeat">
+        <span>Can</span>
+        <span id="hak" style="margin-top: 10%;">{{hak}}</span>
+      </div>
+    </div>
+    <div class="card boyut-bg animated bounceInDown">
+      <div style="background-color: transparent; " class="item item-text-wrap">
+        <span style="font-size: 22px; color: black; font-weight: bold;"><span style="color : darkred;">{{ bitis }}
+          </span> ile başlayan</span>
+      </div>
+    </div>
+    <form ng-submit="goster(kelime)">
+      <div id="yanlisCevapAnimasyon" class="animated bounceInLeft"
+        style="width: 75%;  ; margin-left:auto; margin-right: auto; margin-top: 10%;" class="list list-inset">
+        <label id="border" style="height:60px; transition: border 0.5s;  border-radius: 12px; "
+          class="item item-input item-dark">
+          <input id="fokuslan" ng-disabled="isDisabled" ng-model="kelime"
+            style="font-size: 26px  ; text-align: center; ;  color : white; font-family: monospace; " type="text"
+            placeholder="Lütfen bir meyve adı girin!" />
+        </label>
+      </div>
+    </form>
+
+    <div class="card boyut-bg-2 animated bounceInUp">
+      <div style="background-color: transparent;" class="item item-text-wrap">
+        <span style="font-size: 22px; color: black; font-weight: bold;"><span
+            style="font-size: 22px; color: black; font-weight: bold;" id="sureRenk">{{ saniye }} </span> sn kaldı</span>
+      </div>
+    </div>
+    <button ng-disabled="saniye<30 || isHidden==false" ng-click="basla()" style="margin: 0 auto;
+    display: flex; justify-content: center; width: 75%; height: 50px ; border-radius: 10px ; font-family: monospace; "
+      class="button button-dark animated bounceInRight" type="submit">
+      <span style="font-size: 22px; font-weight: bold;">BAŞLA</span>
+    </button>
+
+
+
+  </ion-content>
+  <div id="skorGoster" class="card gizle animated fadeInDown delay-1s">
+    <div class="item item-text-wrap item-dark boyutGoster">
+      <a ng-click="kapat()" class="iconYerlestir">
+        <ion-icon name="close-circle"></ion-icon>
+      </a>
+      <span>Skorunuz : {{skorOgren}}</span>
+    </div>
+  </div>
+</ion-view>

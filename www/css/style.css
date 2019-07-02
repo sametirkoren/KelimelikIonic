@@ -1,1 +1,384 @@
-/* Empty. Add your own CSS if you like */
+/* ------ OYUN STYLE KODLARI  BAŞLANGIÇ ------ */
+.background {
+  background-image: url(../img/3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-2 {
+  background: #fee5fb;
+}
+
+.butonbg {
+  background: #fee5fb;
+  color: black !important;
+  border: 1px solid #fee5fb !important;
+}
+
+.yazitipi {
+  font-family: monospace !important;
+}
+
+.boyut-bg {
+  width: 60%;
+  background-color: transparent !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12%;
+  text-align: center;
+}
+
+.boyut-bg-2 {
+  width: 60%;
+  background-color: transparent !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+input::placeholder {
+  color: #fff;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input[disabled] {
+  background-color: transparent;
+}
+
+.skor {
+  height: 65px;
+  width: 65px;
+  background-color: #444444;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.skor-1 {
+  margin-left: 2%;
+}
+
+.hak-1 {
+  margin-right: 2%;
+}
+
+div span {
+  color: white;
+  font-family: monospace;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.bounceInLeft {
+  animation-duration: 2s;
+}
+
+.bounceInRight {
+  animation-duration: 2s;
+}
+
+.bounceInDown {
+  animation-duration: 3s;
+}
+
+.bounceInUp {
+  animation-duration: 3s;
+}
+
+.heartBeat {
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.dogruBorder {
+  border: 3px solid green !important;
+  border-color: green;
+}
+
+.yanlisBorder {
+  border: 3px solid darkred !important;
+  border-color: darkred !important;
+}
+
+.sureRenk {
+  color: darkred !important;
+}
+
+.hakRenk {
+  color: darkred !important;
+}
+
+.dogruCevap {
+  color: green;
+}
+
+/* ------ OYUN STYLE KODLARI BİTİŞ ------ */
+
+/* ------ ANASAYFA STYLE KODLARI BAŞLANGIÇ ------ */
+
+.div1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30%;
+  align-items: center;
+  position: relative;
+  margin-left: 10%;
+}
+
+.div2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+  align-items: center;
+}
+
+.div3 {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-stil {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 2px 18px 2px rgba(0, 0, 0, 0.75);
+  font-family: monospace;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.bir,
+.alti {
+  background: #bb6ed8;
+  color: #f9f6f9;
+}
+
+.bir {
+  z-index: 9999;
+}
+
+.iki {
+  position: relative;
+  right: 10px;
+  top: 10px;
+  z-index: 9998;
+  animation-delay: 0.5s;
+}
+
+.uc {
+  position: relative;
+  right: 20px;
+  z-index: 9997;
+  animation-delay: 1s;
+}
+
+.dort {
+  position: relative;
+  top: 10px;
+  right: 25px;
+  z-index: 9996;
+  animation-delay: 1.5s;
+}
+
+.bes {
+  position: relative;
+  z-index: 9995;
+  right: 30px;
+  animation-delay: 2s;
+}
+
+.alti {
+  position: relative;
+  top: 10px;
+  right: 35px;
+  animation-delay: 2.5s;
+}
+
+.iki,
+.uc,
+.dort,
+.bes {
+  background: #f9f6f9;
+}
+
+.butonbgColor {
+  background: #f9f6f9;
+}
+
+.bounceInLeft {
+  animation-delay: 2s;
+}
+
+.button-stil:first-child,
+.button-stil:last-child {
+  background: #bb6ed8;
+  color: #f9f6f9;
+}
+
+.button-game-stil {
+  display: inline-block;
+  width: 75%;
+  height: 50px;
+  margin-bottom: 15%;
+  border: none;
+  background: #bb6ed8;
+  color: #f9f6f9;
+  font-family: monospace;
+  font-size: 23px;
+  font-weight: bold;
+  border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0px 2px 18px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1.5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.fadeInLeft {
+  animation-delay: 1.5s;
+}
+
+.fadeInRight {
+  animation-delay: 2s;
+}
+
+/* ------ ANASAYFA STYLE KODLARI BİTİŞ ------ */
+
+/* ------ NASIL OYNANIR STYLE KODLARI BAŞLANGIÇ ------ */
+
+h3 {
+  margin-top: 25% !important;
+  text-transform: uppercase;
+  text-align: center;
+  color: #bb6ed8;
+  font-weight: bold;
+}
+
+ion-icon {
+  font-size: 34px;
+  color: white;
+  position: relative;
+  top: 0.5rem;
+
+
+}
+
+.stil-div {
+  display: flex;
+  margin-top: 1%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  font-family: monospace;
+  font-size: 18px;
+  margin-right: 8%;
+  margin-left: 8%;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #bb6ed8;
+  margin: 1em 0;
+  padding: 0;
+}
+
+ul li {
+  margin-top: 8%;
+}
+
+.fadeInLeftBig {
+  animation-duration: 0.7s;
+}
+
+.fadeInRightBig {
+  animation-duration: 1.2s;
+}
+
+
+/* ------ NASIL OYNANIR STYLE KODLARI BİTİŞ ------ */
+
+/* ------ NAVİGASYON DÜZENLEME KODLARI ------ */
+
+.item {
+  border-style: none;
+  background-color: #3e4b58;
+  color: #fff;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.item-complex,
+.item-content {
+  background-color: #3e4b58 !important;
+  color: #fff;
+  border-style: none;
+  font-size: 24px;
+  font-family: monospace;
+
+}
+
+.koyu {
+  color: black;
+}
+
+.mr-2 {
+  margin-right: 2%
+}
+
+.ml-2 {
+  margin-left: 2%
+}
+
+.modalOpacity {
+  opacity: 0.5;
+}
+
+.gizle {
+  display: none;
+}
+
+.goster {
+  display: block;
+
+}
+
+#skorGoster {
+  position: relative;
+  top: 37%;
+  border-radius: 10px;
+
+}
+
+.boyutGoster {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.iconYerlestir {
+  position: relative;
+  top: -50%;
+  left: 77%;
+}
